@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/ksheng_pfp.jpg" type="image/png">
+  <title>Kaitlyn Sheng's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- navigation bar at the top of the page -->
+  <nav class="navbar">
+    <div class="logo">Kaitlyn Sheng</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- hamburger menu for mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+
+  <main>
+    <!-- first section - introduction ("Hi, I'm Kaitlyn, etc.") -->
+    <section id="home" class="section section-light">
+      <div class="home-content">
+        <h1>Hi, I'm <span class="highlight">Kaitlyn.</span></h1>
+        <p class="subtitle">Aspiring UX Designer and Frontend Developer with an interest in AI and cognition</p>
+        <p class="home-bio">
+          I care about creating experiences that feel balanced, welcoming, and clear. 
+          <br>
+          Good design, to me, is when someone forgets the interface and just enjoys the flow.
+        </p>
+        <div class="home-buttons">
+          <a class="btn" href="./assets/KaitlynSheng_Resume.pdf" target="_blank">View Resume</a>
+          <a class="btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section - about me -->
+    <section id="about" class="section section-dark">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Kaitlyn Sheng, a junior at the University of Michigan studying Computational Cognitive 
+            Science along with UX Design and Computer Science. I'm especially interested in 
+            how design, people, and technology come together to make products feel simple and natural.
+          </p>
+          <br>
+          <p>
+            Most of my experience comes from hands-on class projects and collaborative team work,
+            where I've helped shape ideas into thoughtful interfaces. I love working with people who 
+            care about building meaningful, well-designed experiences.
+          </p>
+        </div>
+
+        <img src="./images/ksheng_pfp.jpg" class="about-img" alt="Kaitlyn profile">
+      </div>
+    </section>
+
+    <!-- third section - skills and experience (5 each)? make these flippable cards -->
+    <section id="experience" class="section section-light">
+      <h2>Experience & Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Design</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Premiere Pro</li>
+            <li>Canva</li>
+            <li>Notion</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>VS Code</li>
+            <li>React (beginner)</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Other</h3>
+          <ul>
+            <li>Team collaboration</li>
+            <li>User research</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>C++ & Python</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4th section - projects (just do 3 of them) -->
+    <section id="projects" class="section section-dark">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <!-- project 1 -->
+        <div class="project-card flip-card">
+          <div class="flip-card-inner">
+            <!-- front of the card -->
+            <div class="flip-card-front">
+              <img src="./images/opencourse.png" alt="Open Course study group platform mockup">
+            </div>
+
+            <!-- back of the card -->
+            <div class="flip-card-back">
+              <h3>Open Course</h3>
+              <p>Study group platform designed with Void Tech.</p>
+              <div class="project-buttons">
+                <a class="btn" href="https://www.figma.com/design/zsa0QAPIg6BxgaDA01wyBz/Open-Course" target="_blank">Figma</a>
+                <a class="btn-outline" href="https://www.open-course.co/" target="_blank">Live Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- project 2 -->
+        <div class="project-card flip-card">
+          <div class="flip-card-inner">
+            <!-- front of the card -->
+            <div class="flip-card-front">
+              <img src="./images/soaraway.jpg" alt="SoarAway Redesigned">
+            </div>
+
+            <!-- back of the card -->
+            <div class="flip-card-back">
+              <h3>SoarAway Reimagined</h3>
+              <p>A redesigned experience for a nonprofit organization.</p>
+              <div class="project-buttons">
+                <a class="btn" href="https://www.figma.com/design/EgIYSW5WmRc8LbbeNGm8gJ/SoarAway" target="_blank">Figma</a>
+                <a class="btn-outline" href="https://www.figma.com/proto/EgIYSW5WmRc8LbbeNGm8gJ/SoarAway" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- project 3 -->
+        <div class="project-card flip-card">
+          <div class="flip-card-inner">
+            <!-- front of the card -->
+            <div class="flip-card-front">
+              <img src="./images/m3p.png" alt="M3P Project">
+            </div>
+
+            <!-- back of the card -->
+            <div class="flip-card-back">
+              <h3>Michigan Personal Project Portal</h3>
+              <p>UX + IA project for improving the M3P portal.</p>
+              <div class="project-buttons">
+                <a class="btn" href="https://www.figma.com/design/ISWZ8If2LDTUgmDZbGp7P2/ux-ia-wireframes" target="_blank">Figma</a>
+                <a class="btn-outline" href="https://www.figma.com/proto/ISWZ8If2LDTUgmDZbGp7P2/ux-ia-wireframes" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- 5th section - contact (no form because githib, just do mailto) -->
+    <section id="contact" class="section section-light">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Click below to send me an email:</p>
+      <a class="btn" href="mailto:kgsheng3@gmail.com">Email Me</a>
+    </section>
+  </main>
+
+  <!-- add a footer (copyright symbol thing) -->
+  <footer>
+    <p>© <span id="year"></span> Kaitlyn Sheng</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
