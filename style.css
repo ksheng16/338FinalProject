@@ -253,10 +253,17 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.project-buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 0.5rem; /* spacing between buttons */
+  margin-top: auto; /* push buttons to the bottom */
+}
+
 /* flip card */
 .flip-card {
   perspective: 1000px; 
-  height: 250px;
+  min-height: 250px;
 }
 
 .flip-card-inner {
@@ -303,9 +310,9 @@ h2 {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 1rem;
-  gap: 1rem;
+  border-radius: 16px;
+  overflow-y: auto;
 }
 
 .flip-card-back h3 {
